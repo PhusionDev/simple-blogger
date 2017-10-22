@@ -1,0 +1,15 @@
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-sm-12 blog-main">
+      <%= form_for @blog do |f| %>
+        <p>
+          <%= f.text_field :title, class: "form-control", placeholder: "Blog Title" %>
+        </p>
+        <p>
+          <%= f.text_area :content, class: "form-control", rows: 15, placeholder: "Blog Entry" %>
+        </p>
+        <%= f.submit "Create Blog", class: "btn btn-primary btn-block" %>
+      <% end %>
+    </div>
+  </div>
+</div>
